@@ -1,31 +1,16 @@
-# frameworks1-ExpressJS-todo
+# React + Vite
 
-I denne opgave skal du bygge en lille webserver med Express.js, der kan håndtere en liste over opgaver (TODOs). Formålet er at give dig praktisk erfaring med at opsætte en server, definere ruter og arbejde med data i JSON-format. Du skal starte med at oprette et nyt projekt, installere Express og sætte en server op, der kan lytte på en port.  
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Når serveren er oprettet, skal du lave en datastruktur, for eksempel et array, hvor du gemmer nogle opgaver med en titel og en status (fx “færdig” eller “ikke færdig”). Herefter skal du definere ruter, så klienten kan kommunikere med serveren. Din server skal kunne returnere hele listen af opgaver, returnere en enkelt opgave baseret på id, tilføje nye opgaver, opdatere eksisterende opgaver og slette opgaver.  
+Currently, two official plugins are available:
 
-Som overordnet struktur kan du tænke på det sådan her:
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-- Start serveren og sørg for at den kan håndtere JSON-data  
-- Opret en liste med opgaver (fx titel og status)  
-- Lav en rute der returnerer hele listen  
-- Lav en rute der returnerer en enkelt opgave baseret på id  
-- Lav en rute der tilføjer en ny opgave til listen  
-- Lav en rute der opdaterer en eksisterende opgave  
-- Lav en rute der sletter en opgave fra listen  
+## React Compiler
 
-Når du implementerer ruterne, kan du tage udgangspunkt i Express’ officielle dokumentation for [routing](https://expressjs.com/en/guide/routing.html). Det er vigtigt, at du forstår hvordan `req` og `res` bruges til at håndtere data, og hvordan parametre i URL’en kan tilgås via `req.params`.  
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-Når du har de grundlæggende funktioner på plads, kan du udvide din server med ekstra funktionalitet. Du kan for eksempel lave en rute, der filtrerer opgaver baseret på status, eller tilføje deadlines til opgaverne. Du kan også overveje, hvordan serveren kunne udvides til at gemme data i en database i stedet for i et array.  
+## Expanding the ESLint configuration
 
-Målet med opgaven er, at du får en forståelse for, hvordan Express håndterer routing og middleware, og hvordan du kan bygge en simpel API, der kan bruges som fundament for en større applikation. Når du er færdig, skal du kunne forklare, hvordan de forskellige ruter fungerer, og hvordan klienten og serveren kommunikerer med hinanden.  
-
----
-
-## Opsummering
-
-- Opsæt et nyt Node.js-projekt og installer Express  
-- Opret en server der lytter på en port  
-- Lav en datastruktur (array) med opgaver  
-- Implementér ruter til GET, POST, PUT og DELETE  
-- Udvid med ekstra funktioner som filtrering eller deadlines  
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
