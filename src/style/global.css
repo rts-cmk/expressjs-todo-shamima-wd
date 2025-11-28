@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(5, 65, 83) 0%,
+    rgb(186, 152, 207) 100%
+  );
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.page__wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
+}
+/* ----- TodoList ----- */
+.todoList {
+  padding: 10px 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%;
+}
+.todoList h2 {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 32px;
+  text-align: center;
+}
+/**/
+.form {
+  margin-bottom: 30px;
+  border-radius: 20px;
+  background-color: white;
+  width: 100%;
+  display: flex;
+}
+.form input {
+  background-color: transparent;
+  font-size: 16px;
+  border: none;
+  padding: 10px;
+  width: 100%;
+}
+.form input:focus {
+  outline: none;
+}
+.form button {
+  cursor: pointer;
+  border: none;
+  padding: 5px 35px;
+  border-radius: 20px;
+  background-color: rgb(12, 54, 87);
+  color: white;
+  font-weight: 600;
+}
+/**/
+.todolist__ul {
+  list-style: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px 13px;
+  background-color: white;
+}
+.todolist__ul li {
+  color: #333;
+  border-radius: 15px;
+  padding: 5px 10px;
+  background-color: rgb(232, 232, 232);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todolist__ul li p {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/**/
+.todolist__ul li button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todolist__ul li button:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+}
+.todolist__ul li button:active {
+  transform: scale(0.75);
+}
